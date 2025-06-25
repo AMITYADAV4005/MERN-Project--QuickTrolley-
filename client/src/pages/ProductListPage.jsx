@@ -105,7 +105,7 @@ const ProductListPage = () => {
             displaySubCategory.map((s,index)=>{
               const link = `/${valideURLConvert(s?.category[0]?.name)}-${s?.category[0]?._id}/${valideURLConvert(s.name)}-${s._id}`
               return(
-                <Link to={link} className={` w-full p-4 lg:flex items-center lg:w-full lg:h-20 box-border lg:gap-4 border-b hover:bg-gray-100 cursor-pointer ${subCategoryId === s._id ? "bg-gray-200 hover:bg-gray-300" : ""} `}>
+                <Link to={link} className={` w-full lg:flex items-center lg:w-full lg:h-20 box-border lg:gap-4 border-b hover:bg-gray-100 cursor-pointer ${subCategoryId === s._id ? "bg-gray-200 hover:bg-gray-300" : ""} `}>
                   <div className='w-fit max-w-28 mx-auto lg:mx-0 bg-slate-50 hover:bg-slate- rounded box-border'>
                     <img
                       src={s.image}
