@@ -401,7 +401,7 @@ const Header = () => {
 
   return (
     // <header className="h-24 lg:h-30 backdrop-blur-md lg:shadow-md sticky top-0 z-40 flex flex-col justify-center gap-1 bg-slate-200">
-    <header className="h-24 lg:h-28 backdrop-blur-md bg-slate-300/60 border-b border-gray-200 shadow-sm sticky top-0 z-50 flex flex-col justify-center gap-1 px-2">
+    <header className="h-24 lg:h-28 backdrop-blur-md bg-slate-300/60 border-b border-gray-200 shadow-sm sticky top-0 z-50 flex flex-col justify-center gap-1">
       {!(isSearchPage && isMobile) && (
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
@@ -437,7 +437,7 @@ const Header = () => {
             </button>
 
             {/* Desktop */}
-            <div className="hidden lg:flex items-center lg:gap-4 xl:gap-12">
+            <div className="hidden lg:flex items-center lg:gap-4 xl:gap-12 px-2">
               {user?._id ? (
                 <div className="relative" ref={dropdownRef}>
                   <div

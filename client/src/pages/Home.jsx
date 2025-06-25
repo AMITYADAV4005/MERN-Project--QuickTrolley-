@@ -189,7 +189,7 @@ const Home = () => {
       <div className='container mx-auto'>
 
         {/* Desktop Swiper (Visible only on lg and above) */}
-        <div className='hidden md:block lg:block w-full h-64  min-h-36 bg-slate-100 rounded-3xl mt- mb-7 overflow-hidden'>
+        <div className='hidden md:block lg:block w-full h-64  min-h-36 bg-slate-100 rounded-3xl mb-7 overflow-hidden'>
           <Swiper
             modules={[Autoplay, Pagination]}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
