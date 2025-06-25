@@ -76,7 +76,7 @@ import { DisplayPriceInRupees } from '../utils/DisplayPriceInRupees'
 import { Link } from 'react-router-dom'
 import { valideURLConvert } from '../utils/valideURLConvert'
 import { CiStopwatch } from "react-icons/ci";
-import pricewithDiscount from '../utils/PricewithDiscount';
+import PriceWithDiscount from '../utils/PriceWithDiscount'; 
 import SummaryApi from '../common/SummaryApi'
 import AxiosToastError from '../utils/AxiosToastError'
 import Axios from '../utils/Axios'
@@ -124,7 +124,7 @@ const CardProduct = ({data}) => {
         <div className='px-2 lg:px-0 flex items-center justify-between gap-1 lg:gap-3 text-sm lg:text-base'>
             <div>
                 <div className='font-semibold'>
-                    {DisplayPriceInRupees(pricewithDiscount(data.price,data.discount))}
+                    {DisplayPriceInRupees(PriceWithDiscount(data.price,data.discount))}
                 </div>
             </div>
             <div className=''>
