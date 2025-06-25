@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { handleAddItemCart } from "../store/cartProduct";
 import AxiosToastError from "../utils/AxiosToastError";
 import toast from "react-hot-toast";
-import { pricewithDiscount } from "../utils/PriceWithDiscount";
+import PriceWithDiscount from "../utils/PriceWithDiscount";
 import { handleAddAddress } from "../store/addressSlice";
 import { setOrder } from "../store/orderSlice";
 
@@ -85,7 +85,7 @@ const GlobalProvider = ({children}) => {
       setTotalQty(qty)
       
       const tPrice = cartItem.reduce((preve,curr)=>{
-          const priceAfterDiscount = pricewithDiscount(curr?.productId?.price,curr?.productId?.discount)
+          const priceAfterDiscount = PriceWithDiscount(curr?.productId?.price,curr?.productId?.discount)
 
           return preve + (priceAfterDiscount * curr.quantity)
       },0)
