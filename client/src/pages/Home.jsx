@@ -185,7 +185,7 @@ const Home = () => {
   // const bannerImagesMobile = [bannerMobile, pharmacyImage, petCare, babyCare]
 
   return (
-    <section className='bg-white p-4'>
+    <section className='bg-white py-4 lg:p-4'>
       <div className='container mx-auto'>
 
         {/* Desktop Swiper (Visible only on lg and above) */}

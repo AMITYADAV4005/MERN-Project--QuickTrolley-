@@ -401,14 +401,14 @@ const Header = () => {
 
   return (
     // <header className="h-24 lg:h-30 backdrop-blur-md lg:shadow-md sticky top-0 z-40 flex flex-col justify-center gap-1 bg-slate-200">
-    <header className="h-24 lg:h-28 backdrop-blur-md bg-slate-300/60 border-b border-gray-200 shadow-sm sticky top-0 z-50 flex flex-col justify-center gap-1">
+    <header className="h-24 lg:h-28 backdrop-blur-md bg-slate-300/60 border-b border-gray-200 shadow-sm sticky top-0 z-50 flex flex-col justify-center gap-1 px-2">
       {!(isSearchPage && isMobile) && (
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
           <div className="h-full">
             <Link to={"/"} className="h-full flex justify-center items-center">
               <img
-                src={logo}
+                src={logo} 
                 width={320}
                 height={70}
                 alt="logos"
