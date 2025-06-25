@@ -110,7 +110,7 @@ const ProductListPage = () => {
                     <img
                       src={s.image}
                       alt='subCategory'
-                      className='w-14 lg:h-16 lg:w-14 h-full object-scale-down mt-2 pt-1'
+                      className='w-12 lg:h-16 lg:w-14 h-full object-scale-down mt-2 pt-1'
                     />
                   </div>
                   <p className='lg:mt-0 text-xs text-center lg:text-left lg:text-base'>{s.name}</p>
