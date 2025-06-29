@@ -251,7 +251,7 @@ const UserMenu = ({ close }) => {
         <div className={`text-sm flex items-center gap-1 px-2 py-1 mt-1 ${activeLink === "/dashboard/profile" ? 'bg-slate-200 hover:bg-slate-300' : 'hover:bg-slate-100'}`}>
           <span className='text-ellipsis line-clamp-1'>{user.name || user.mobile}</span>
           <HiOutlineExternalLink size={16} />
-          <span className='ml-auto w-12 text-center font-medium bg-green-100 text-green-700'>
+          <span className='ml-auto w-14 text-center font-medium bg-green-100 text-green-700'>
             {user.role === "ADMIN" ? "[Admin]" : ""}
           </span>
         </div>
