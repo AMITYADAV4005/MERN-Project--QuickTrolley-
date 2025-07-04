@@ -17,7 +17,7 @@ const Footer = () => {
               <p>This is a clone of Blinkit, developed for educational and demonstration purposes.</p>
               <p>and seamless user experience.</p>
               <p className='mt-3'>Developer : Amit Yadav</p>
-              <p>Email : amityadav78459@gmail.com</p>
+              <p>Email : myquicktrolley@gmail.com</p>
               <div className=' text-left flex gap-4 mt-3'>
                 <p>Privacy Policy</p>  
                 <p>Terms & Conditions</p>  
